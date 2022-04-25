@@ -12,6 +12,12 @@ app.listen(PORT,  () => {
 	console.log(`Server is working at port ${PORT}`);
 });
 
+app.get("/", (req, res) => {
+	res.send("Youtube downloader");
+  });
+  
+
+
 app.get("/download",async (req, res) => {
 
 try{
